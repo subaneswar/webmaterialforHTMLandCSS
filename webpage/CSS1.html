@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #bdc3c7;
+        }
+
+        #w{
+            background-color: aquamarine;
+        }
+        #q{
+            height: 500px;
+            width: 500px;
+            border: 2px solid;
+            background-image: url(./image/HA-CG874.jpg);
+            /* background-repeat: no-repeat; */
+            
+        }
+        #e{
+            height: 500px;
+            width: 500px;
+            border: 2px solid;
+            background-image: url(./image/HA-CG874.jpg);
+            background-repeat: no-repeat;
+        }
+       #p{
+        height: 500px;
+        width: 1000px;
+        /* border: 2px solid; */
+        display: flex;
+        column-gap: 50px;
+       }
+      
+      h1{
+        margin: 40px auto;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        color: #121212;
+        text-align: center;
+        letter-spacing: 5px;
+        text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+        0px -4px 10px rgba(255,255,255,0.3);
+      }
+      #m{
+        height: 500px;
+        width: 1000px;
+        border: 2px solid black;
+        display: grid;
+        column-gap: 50px;
+
+      }
+      #a{
+        height: 500px;
+        width: 500px;
+        border: 2px solid;
+        background-image: url(./image/HA-CG874.jpg);
+        background-repeat: no-repeat;
+
+      }
+      #s{
+        height: 500px;
+        width: 500px;
+        border: 2px solid;
+        background-image: url(./image/HA-CG874.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+       
+    </style>
+</head>
+<body>
+    <center><h1>BACKGROUND PROPERTIES</h1></center>
+    <hr>
+    <h3 id="w">Background color:-</h3>
+    <p> this property is used to apply background color for the element whichever you choose</p>
+    <p>eg-> h1{
+        background color:"blue"
+        }</p>
+    <hr>
+    <h3>background image:-</h3>
+    <p>By default if you add backgrond-image will be repeating we can control by using this property 
+        the value for this property is "no repeat","repeat-x"(x-axis),"repeat-y"(y-axis)</p>
+    <p>eg-> section{
+        background-image : url("path of the image") <br>
+        background-repeat : no-repeat or repeat-x or repeat-y
+        }</p>
+        <br>
+
+    <div id="p">
+        <section id="q">
+
+        </section>
+        <br>
+        <section id="e">
+    
+        </section>
+    </div>
+
+    <br>
+   
+    <hr>
+    <h3>background-repeat:-</h3>
+    <p>By default if you add backgrond-image will be repeating we can control by using this property 
+        the value for this property is "no repeat","repeat-x"(x-axis),"repeat-y"(y-axis)</p>
+    <p>eg-> section{
+        background-image : url("path of the image") <br>
+        background-repeat : no-repeat or repeat-x or repeat-y
+        }</p>
+    <div class="m">
+        <section id="a">
+
+        </section>
+        <br>
+        <section id="s">
+
+        </section>
+
+    </div>
+    <hr>
+    <h3> background-position</h3>
+    <p>if we want to manage position of the background image
+       default value of the property  is left
+       values are - right/left/top/bottom/center</p>
+    <p>eg-> section{
+	background-image : url("path of the image")
+	backgrong-position : center/top/bottom/left/right
+	}</p>
+    <p>eg-> section{
+	background-image : url("path of the image")
+	backgrong-position : center/top/bottom/left/right
+	}</p>
+    <hr>
+    <h3>background-attachment:-</h3>
+    <p>if we want to fix the background this property is used 
+       values are scroll or fixed
+       scroll is the default value</p>
+    <p>eg-> section{
+	background-image : url("path of image");
+	background-attachment : scroll/fixed;
+	}</p>
+    <hr>
+    <h3>Gradient:-</h3>
+    <p>There are combination of multiple colors
+        we have 2 types of gradients:-</p>
+    <ol>
+        <li>Linear gradient</li>
+        <li>Radial gradient</li>
+    </ol>
+    <ol>
+        <li>Linear gradient</li>
+        <p>the color will start from the top of the UI
+           we can give no. of colors
+           by default the color will start from top to bottom</p>
+        <p>eg-> section{
+	            height:100vh;
+	            width:100%;
+	            background : linear-gradient(red,gree,blue)
+	            }</p>
+        <li>Radial gradient</li>
+        <p>the color will start from the center of the UI
+         we can give no. of values</p>
+        <p>eg-> section{
+	            height : 100vh;
+	            width : 100%;
+	            background : radila gradient(red,ble,green)
+	            }</p>
+    </ol>
+    <hr>
+    <h1>BORDER PROPERTIE</h1>
+    <hr>
+    <ol>
+        <li> border-width:- this property is used to give thickness of the border
+            the value we use is pixels "px"</li>
+        <li> different style for dorder we have solid,dashed, dotted,double,groove</li>
+        <li>using this property you can use all the properrties at once like width,style,color
+            it will take 3 values "width","style","color"</li>
+        <li>border-color:- color for the border</li>
+        <li>border-radius:- to apply some curves on edges of the border
+            you can apply values pixels(px) or percentage(%)</li>
+        <li>you can target one particular side of the border & apply different styles
+            we have</li>
+        <ol>
+            <li>border-top</li>
+            <li>border-bottom</li>
+            <li>border-left</li>
+            <li>border-right</li>
+        </ol>
+    </ol>
+    <hr>
+    <h1>TEXT PROPERTIES</h1>
+    <hr>
+    <ol>
+        <li>text-align:- whenever you wanted to align the text in one particular format 
+            we can give values as center/righr/left
+            default values is left
+            eg-> p{
+                text-align : center;
+                }</li>
+        <li>text-decoration:- whenever  we wanted to docorate the text we use this property
+            the values are underline/overline/linethrough/none.
+            eg-> p{
+                text-decoration : overline;
+                }
+            </li>
+        <li>text-transform:- whenever we anted to capatalize the eneter text transform
+            the values used for this property is capitalize/uppercase/lowercase
+            </li>
+        <li>text-shadow:- for giving shadow effect fro texts
+            it will accepts 4 values "x-axis","y-axis","blur","color"
+            </li>
+        <li> word-spacing:- to give space between words</li>
+        <li>letter-spacing:- to give space between letters</li>
+        <li>line-height:- to give space between lines</li>
+    </ol>
+    <ol>
+        <li> color:- used to cahnge the color of the font</li>
+        <li>font-size:- used to increase the size of font</li>
+        <li>font-style:- used to apply styles like "italic","oblique","normal"</li>
+        <li>font-weight:- used to give boldness to the text</li>
+        <li>font-family:- in css we have different types of family,Each family will be having their own styles
+        </li>
+    </ol>
+    <center><button><a href="CSS.html">back</a></button></center>
+</body>
+</html>

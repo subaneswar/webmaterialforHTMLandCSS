@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #bdc3c7;
+        }
+        h1{
+            margin: 40px auto;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            color: #121212;
+            text-align: center;
+            letter-spacing: 5px;
+            text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+            0px -4px 10px rgba(255,255,255,0.3);
+        }
+        #s{
+           border: 2px solid black;
+           width: 90px;
+           height: 30px;
+           background-color: #2c3e50;
+           display:flex;
+           padding: 1px;
+           align-items: center;
+           justify-content: center;
+        }
+        #s a{
+            color: white;
+        } 
+        h1{
+        margin: 40px auto;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        color: #121212;
+        text-align: center;
+        letter-spacing: 5px;
+        text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+        0px -4px 10px rgba(255,255,255,0.3);
+      } 
+    </style>
+</head>
+<body>
+    <div id="s">
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="index.html" style="text-decoration: none;"><h3>Home</h3></a>
+    </div>
+    <center><h1>CSS</h1></center>
+    <hr>
+    <ul>
+        <li>It is used to design and also to give proper alignment to the webpage.</li>
+        <li>there are 3 ways to use CSS:-</li>
+    </ul>
+    <ol>
+        <li>Inline css</li>
+        <li>Internal css</li>
+        <li>External css</li>
+    </ol>
+    <ol>
+        <li>Inline css:- </li>
+        <hr>
+        <ul>
+            <li>it is type of CSS where we will be applying style properties in the line itself</li>
+            <li>Inline css is applied using "style" attribute</li>
+            <li>for each tag we have to declare "style" attribute and the css properties</li>
+            <li>we can add n numbers of css properties using inline</li>
+            <img src="./image/inline.png" alt="">
+        </ul>
+        <hr>
+        <li>Internal css:- </li>
+        <hr>
+        <ul>
+            <li>It is a type of css where <img src="image/instyle.png" alt=""> tag is used to apply CSS properties</li>
+            <li>style tag should written inside  head tag</li>
+            <li>Inside style tag you need to target particular element and apply css properties</li>
+            <img src="./image/internal.png" alt="">
+        </ul>
+        <hr>
+        <li>External css:-</li>
+        <hr>
+        <ul>
+            <li>we have to create a sperate file while using external css</li>
+            <li> file extension for extrnal css file in ".css"</li>
+            <li>target an element and apply css properties </li>
+            <li>and also we have to link css file with respected html file</li>
+        </ul>
+        <img src="./image/external.png" alt="">
+    </ol>
+    <hr>
+    <table border="2px">
+        <tr>
+            
+            <th colspan="3"><h3>Types of selector</h3></th>
+            
+        </tr>
+        <tr>
+            <th>Simple selector</th>
+            <th>combinator selector</th>
+            <th>pseudo-class selector</th>
+        </tr>
+        <tr>
+            <td>Id(#):whenever we want to target one particular element and apply style for specific element we will be using id</td>
+            <td>Decendent(empty space):it is represented by empty space
+                this selector will select child element and also grandchild elemnts whichever we wanted to select</td>
+            <td>Link(:)
+                <ul>
+                    <li>whenever the  hypertext is created the default link color of hypertext will be blue</li>
+                    <li>link is also concidered unvisited ****</li>
+                    <li>if we wanted to chnage the default color ":link" will be used</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Class(.):whenever we want to select multiple elements and apply style for every element we go for class selector</td>
+            <td>Child(>):this selector is used to select only child element</td>
+            <td>Active(:)
+                <ul>
+                    <li>after clicking on the hypertext the default color of the hypertext is red</li>
+                    <li>if we wanted to change the default color of active ":active" will be used</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Universal(*):whenever we want to select everything inside a structure we will be using universal selector</td>
+            <td>Adjacent sibling(+):it is used to traget the neighbour element particular parent closing tag
+                - it will be targetting the nearest one</td>
+            <td>visited(:)
+                <ul>
+                    <li> this selector will get applied only when the webpage is visited by the user</li>
+                    <li>the default color of visited is "purple"</li>
+                    <li>if we wanted to change the default color of visited ":visited" will be used
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>element name(by tagname itself): whenever we want to select the element by tagname this selector is used </td>
+            <td>General sibling(~):it is used to target every neighbour to the respected element</td>
+            <td>Hover(:)
+                <ul>
+                    <li>this is a type of pseudo class selector which we can apply for all the elements</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Group selector(,):suppose if we wanted to apply same style for the multiple different elements then we go for group selector</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <hr>
+    <center><button><a href="CSS1.html">NEXT</a></button></center>
+
+    
+</body>
+</html>
